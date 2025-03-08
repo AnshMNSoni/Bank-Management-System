@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./static/css/styles.css" />
+    <script src="https://kit.fontawesome.com/5c4a0b1cae.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="text-gray-600 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <i class="fa-solid fa-building-columns text-2xl"></i>
+          <span class="ml-3 text-xl">OneBank</span>
+        </a>
+        <nav class="ml-auto flex flex-wrap items-center text-base justify-center">
+          <a href="{{ url_for('login') }}" class="mr-5 hover:text-gray-900">Login</a>
+          <a href="{{url_for('signup')}}" class="mr-5 hover:text-gray-900">Signup</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="home">
+      <div class="image max-h-50">
+        <img src="./static/img/bank-bg.png" class="w-full h-screen" alt="" />
+      </div>
+      <div class="container mx-auto my-16">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic!</span>
+        <section class="container mx-auto my-16 flex">
+          <div class="Financial-Card h-auto">
+            <span>Finanical Services</span>
+            <div class="finanical-services h-60 w-85 my-1.5">
+              <div class="p-3.5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center">
+                <div class="text-3xl">
+                  <i class="fa-solid fa-money-check-dollar"></i>
+                </div>
+                <div class="mx-3.5">
+                  <div class="text-sm text-black">Loans and Money</div>
+                  <p class="text-slate-500">You have a new message!</p>
+                </div>
+              </div>
+
+              <div class="p-3.5 max-w-sm my-1.5 mx-auto bg-white rounded-xl shadow-lg flex items-center">
+                <div class="text-3xl">
+                  <i class="fa-solid fa-piggy-bank"></i>
+                </div>
+                <div class="mx-3.5">
+                  <div class="text-sm text-black">Saving and Investments</div>
+                  <p class="text-slate-500">You have a new message!</p>
+                </div>
+              </div>
+
+              <div class="p-3.5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center">
+                <div class="text-3xl">
+                  <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="mx-3.5">
+                  <div class="text-sm text-black">Credit and Debit Cards</div>
+                  <p class="text-slate-500">You have a new message!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Customer-Card mx-7">
+            <span>Customer Support</span>
+            <div class="finanical-services h-60 w-85 my-1.5">
+              <div class="p-3.5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center">
+                <div class="text-3xl">
+                  <i class="fa-solid fa-handshake-angle"></i>
+                </div>
+                <div class="mx-3.5">
+                  <div class="text-sm text-black">24/7 Helpline</div>
+                  <p class="text-slate-500">You have a new message!</p>
+                </div>
+              </div>
+
+              <div class="p-3.5 max-w-sm my-1.5 mx-auto bg-white rounded-xl shadow-lg flex items-center">
+                <div class="text-3xl">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="mx-3.5">
+                  <div class="text-sm text-black">Branch and ATM Locator</div>
+                  <p class="text-slate-500">You have a new message!</p>
+                </div>
+              </div>
+
+              <div class="p-3.5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center">
+                <div class="text-3xl">
+                  <i class="fa-regular fa-circle-question"></i>
+                </div>
+                <div class="mx-3.5">
+                  <div class="text-sm text-black">FAQs and Help Center</div>
+                  <p class="text-slate-500">You have a new message!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="Security-Card">
+            <span>Security and Froud Protection</span>
+            <div class="finanical-services h-60 w-85 my-1.5">
+              <div class="p-3.5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center">
+                <div class="text-3xl">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="mx-3.5">
+                  <div class="text-sm text-black">Secure Online Banking</div>
+                  <p class="text-slate-500">You have a new message!</p>
+                </div>
+              </div>
+
+              <div class="p-3.5 max-w-sm my-1.5 mx-auto bg-white rounded-xl shadow-lg flex items-center">
+                <div class="text-3xl">
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="mx-3.5">
+                  <div class="text-sm text-black">Fraud Alerts and Reporting</div>
+                  <p class="text-slate-500">You have a new message!</p>
+                </div>
+              </div>
+
+              <div class="p-3.5 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center">
+                <div class="text-3xl">
+                  <i class="fa-solid fa-comment"></i>
+                </div>
+                <div class="mx-3.5">
+                  <div class="text-sm text-black">Cybersecurity Tips</div>
+                  <p class="text-slate-500">You have a new message!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
